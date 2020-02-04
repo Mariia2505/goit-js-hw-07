@@ -1,0 +1,14 @@
+'use strict';
+
+// Напиши скрипт, который бы при потере фокуса на инпуте, 
+// проверял его содержимое на правильное количество символов.
+
+const form = document.querySelector('input[data-length="6"]');
+
+form.addEventListener('blur', () => {
+  if (form.value.length === 6) {
+    form.classList.add('valid')
+  } else {
+    form.classList.add('invalid')
+  }
+})
