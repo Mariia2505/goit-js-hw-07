@@ -18,10 +18,6 @@ ingredients.map(element => {
   items.push(item);
 });
 
-// list.appendChild(...items);  // почему-то не хочет апендить больше одного элемента
-
-for (let i = 0; i < items.length; i++) {
-  list.appendChild(items[i])
-}
+list.append(...items); 
 
 console.log(items);
