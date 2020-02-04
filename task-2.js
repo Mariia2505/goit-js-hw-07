@@ -18,6 +18,6 @@ ingredients.map(element => {
   items.push(item);
 });
 
-list.append(...items); 
+list.append(...items);
 
 console.log(items);
