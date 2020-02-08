@@ -15,8 +15,8 @@ const images = [{
 ];
 
 const list = document.querySelector('#gallery');
-const listCode = images.map(img => `<li>\n\t<img src="${img.url}" alt="${img.alt}">\n</li> \n\n`).reduce((acc, item) => acc + item, '');
+// const listCode = images.map(img => `<li>\n\t<img src="${img.url}" alt="${img.alt}">\n</li> \n\n`).reduce((acc, item) => acc + item, '');
+
+const listCode = images.reduce((acc, img) => `${acc} + <li>\n\t<img src="${img.url}" alt="${img.alt}">\n</li> \n\n`, '');
 
 list.insertAdjacentHTML('afterbegin', listCode);
-
-console.log(listCode);

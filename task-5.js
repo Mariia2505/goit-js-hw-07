@@ -5,10 +5,10 @@ const output = document.querySelector('#name-output');
 
 
 input.addEventListener('input', () => {
-  if (input.value.length === 0) {
+  if (!input.value.length) {
     output.textContent = 'незнакомец';
-
-  } else {
-    output.textContent = input.value;
+    return;
   }
+  output.textContent = input.value;
+
 });

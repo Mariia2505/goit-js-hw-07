@@ -10,13 +10,13 @@ const increment_btn = document.querySelector('button[data-action="increment"]');
 const decrement_btn = document.querySelector('button[data-action="decrement"]');
 
 function increment() {
-  counterValue += 1;
-  span.textContent = counterValue;
+  // counterValue += 1;
+  span.textContent = counterValue += 1;
 }
 
 function decrement() {
-  counterValue -= 1;
-  span.textContent = counterValue;
+  // counterValue -= 1;
+  span.textContent = counterValue -= 1;
 }
 
 increment_btn.addEventListener('click', increment);
