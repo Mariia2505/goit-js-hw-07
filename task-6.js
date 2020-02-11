@@ -9,8 +9,7 @@ form.addEventListener('blur', () => {
   if (form.value.length === 6) {
     form.classList.remove('invalid');
     form.classList.add('valid');
-    return
+  } else {
+    form.classList.add('invalid');
   }
-  form.classList.add('invalid');
-
 })
